@@ -1,0 +1,11 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "SPA with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": 
+  },
+  "author": "Miguel Vasquez",
+  "license": "MIT"
+}
