@@ -2,6 +2,8 @@
 const path = require('path')
 // trabajar con archivos html
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+//trabajar con archivos css
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 // modulo con toda la configuracion
 module.exports = {
@@ -33,13 +35,20 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin([{
+        new HtmlWebpackPlugin({
             // como injectar valores a html
             inject: true,
             // donde está el template main
             template: './public/index.html',
             // nombre del archivo
             filename: './index.html'
-        }])
-    ]   
+        }),
+        new CopyWebpackPlugin({
+                patterns: [{
+                // donde está
+                from: './src/styles/styles.css',
+                // a donde va 
+                to: ' ' }],
+        })
+    ]
 }
