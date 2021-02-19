@@ -1,1 +1,281 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "tahoma";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.Main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 200px minmax(calc(100vh - 200px), auto);
+      grid-template-rows: 200px minmax(calc(100vh - 200px), auto);
+  background-color: black;
+}
+
+.Main .Header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: black;
+}
+
+.Main .Header .Header-main .Header-logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Main .Header .Header-main .Header-logo a img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  width: 60%;
+  cursor: pointer;
+}
+
+.Main .Header .Header-main .Header-nav {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.Main .Header .Header-main .Header-nav a {
+  text-decoration: none;
+  color: #4343ec;
+}
+
+.Main .characters {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  padding: 5% 12%;
+  background: #080808;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+.Main .characters .Characters-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, right top, from(#1b9aea), to(#06578d));
+  background: linear-gradient(to right top, #1b9aea, #06578d);
+  padding: 30px;
+  border-radius: 15px;
+  min-height: 250px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.Main .characters .Characters-item h2 {
+  margin-top: 15px;
+  color: white;
+}
+
+.Main .Character-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: calc(100vh - 210px);
+      grid-template-rows: calc(100vh - 210px);
+  padding: 2%;
+  background: #080808;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  grid-gap: 20px;
+}
+
+.Main .Character-inner .Characters-card {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, right top, from(#1b9aea), to(#06578d));
+  background: linear-gradient(to right top, #1b9aea, #06578d);
+}
+
+.Main .Character-inner .Characters-card img {
+  width: 70%;
+}
+
+.Main .Character-inner .Characters-card-details {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #131212;
+}
+
+.Main .Character-inner .Characters-card-details h3 {
+  font-size: 30px;
+  margin-bottom: 1.5%;
+  color: white;
+}
+
+.Main .Character-inner .Characters-card-details .name {
+  font-size: 40px;
+  margin-bottom: 1.8%;
+  color: #1b9aea;
+}
+
+.Main .content {
+  background-color: blue;
+}
+
+.Main .Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: black;
+  height: 250px;
+}
+
+.Main .Footer .personal {
+  font-size: 25px;
+  color: white;
+}
+
+.Main .Footer .personal .Miguel {
+  color: white;
+}
+
+.Main .Footer .personal .Copy {
+  font-size: 20px;
+  color: #3fb3f6;
+}
+
+.Main .Footer .media img {
+  width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .Main .characters {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0% 12%;
+    justify-items: center;
+  }
+  .Main .characters .Characters-item {
+    min-height: 250px;
+    max-width: 100%;
+  }
+  .Main .characters .Characters-item img {
+    max-width: 100%;
+    min-width: 90%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1502px) {
+  .Main .characters {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0% 12%;
+    justify-items: center;
+  }
+  .Main .characters .Characters-item {
+    min-height: 250px;
+    max-width: 98%;
+  }
+  .Main .characters .Characters-item img {
+    max-width: 100%;
+    min-width: 90%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
