@@ -4,6 +4,7 @@ import Character from "../pages/Character"
 import Error404 from "../pages/Error404"
 import getHash from "../utils/getHash"
 import resolveRoutes from "../utils/resolveRoutes"
+import Footer from "../pages/Footer"
 
 
 // rutas que vamos a manejar

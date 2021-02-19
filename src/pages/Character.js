@@ -8,14 +8,14 @@ const Character = async () =>{
             <article class="Characters-card">
                 <img src="${character.image}" alt="${character.name}">
             </article>
-            <article class="Characters-card">
-                <h3>${character.name}</h3>
-                <h3>${character.status}</h3>
-                <h3>${character.species}</h3>
-                <h3>${character.gender}</h3>
-                <h3>${character.origin.name}</h3>
-                <h3>${character.location.name}</h3>
-                <h3>${character.episode.length}</h3>
+            <article class="Characters-card-details">
+                <h3 class="name">${character.name}</h3>
+                <h3>Status: ${character.status}</h3>
+                <h3>Specie: ${character.species}</h3>
+                <h3>Gender: ${character.gender}</h3>
+                <h3>Origin: ${character.origin.name}</h3>
+                <h3>Location: ${character.location.name}</h3>
+                <h3>Episodies: ${character.episode.length}</h3>
             </article>
       
         </div>

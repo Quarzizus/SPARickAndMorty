@@ -1,0 +1,192 @@
+$fuente: "tahoma";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $fuente;
+    box-sizing: border-box;
+}
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.Main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px minmax(calc(100vh - 200px), auto);
+    background-color: black;
+    .Header{
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        .Header-main{
+            .Header-logo{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        display:flex;
+                        align-self: center;
+                        justify-self: center;
+                        width: 60%;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+            .Header-nav{
+                display: grid;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: rgb(67, 67, 236);
+                }
+            }
+        }
+    }
+        .characters{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 25px;
+            padding: 5% 12%;
+            background: rgb(8, 8, 8);
+            transition: all ease-in 0.3s;
+
+            .Characters-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to right top, rgb(27, 154, 234), rgb(6, 87, 141));
+                padding: 30px;
+                border-radius: 15px;
+                min-height: 250px;
+                text-align: center;
+                cursor: pointer;
+                animation-name: fade;
+                animation-duration: 2s;
+
+                h2{
+                    margin-top: 15px;
+                    color: white;
+                }
+            }
+        }
+    .Character-inner{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: calc(100vh - 210px);
+        padding: 2%;
+        background: rgb(8, 8, 8);
+        animation-name: fade;
+        animation-duration: 2s;
+        grid-gap: 20px;
+
+        .Characters-card{
+            grid-column: 1/2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right top, rgb(27, 154, 234), rgb(6, 87, 141));
+            img{
+                width: 70%;
+            }
+        }
+        .Characters-card-details{
+            grid-column: 2/3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: rgb(19, 18, 18);
+
+            h3{
+                font-size: 30px;
+                margin-bottom: 1.5%;
+                color: white;
+            }
+
+            .name{
+                font-size: 40px;
+                margin-bottom: 1.8%;
+                color: rgb(27, 154, 234);
+            }
+        }
+
+    }
+    .content{
+        background-color: blue;
+    }
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center  ;
+        background-color: black;
+        height: 250px;
+        .personal{
+            font-size: 25px;
+            color: white;
+            .Miguel{
+                    color: rgb(255, 255, 255);
+            }
+            .Copy{
+                font-size: 20px;
+                color: rgb(63, 179, 246);
+            }
+        }   
+        .media{
+            img{
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .Main {
+        .characters{
+            grid-template-columns: 1fr;
+            padding: 0% 12%;
+            justify-items: center;
+            .Characters-item{
+                min-height: 250px;
+                max-width: 100%;
+                img{
+                max-width: 100%;
+                min-width: 90%;
+                }
+            }
+        }
+
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1502px){
+    .Main {
+        .characters{
+            grid-template-columns: 1fr 1fr;
+            padding: 0% 12%;
+            justify-items: center;
+            .Characters-item{
+                min-height: 250px;
+                max-width: 98%;
+                img{
+                max-width: 100%;
+                min-width: 90%;
+                }
+            }
+        }
+
+    }
+}

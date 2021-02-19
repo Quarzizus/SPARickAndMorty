@@ -3,12 +3,11 @@ const Header = () => {
         <div class="Header-main">
             <div class="Header-logo">
                 <a href="/">
-                    Rick And Morty
+                    <img src="http://assets.stickpng.com/images/58f37720a4fa116215a9240f.png"></img>
                 </a>
             </div>
             <div class="Header-nav">
                 <a href="#/about/">
-                    about
                 </a>
             </div>
         </div>
