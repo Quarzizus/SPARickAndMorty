@@ -48,7 +48,7 @@ module.exports = {
                 // donde está
                 from: './src/styles/styles.css',
                 // a donde va 
-                to: 'styles ' }],
+                to: '' }],
         })
     ]
 }
