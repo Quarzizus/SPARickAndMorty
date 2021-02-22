@@ -2,7 +2,7 @@ const Header = () => {
     const view = `
         <div class="Header-main">
             <div class="Header-logo">
-                <a href="/">
+                <a href="/SPARickAndMorty">
                     <img src="http://assets.stickpng.com/images/58f37720a4fa116215a9240f.png"></img>
                 </a>
             </div>
